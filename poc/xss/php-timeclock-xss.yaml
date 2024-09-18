@@ -1,4 +1,4 @@
-id: php-timeclock-xss-1
+id: php-timeclock-xss
 
 info:
   name: PHP Timeclock 1.04 XSS
