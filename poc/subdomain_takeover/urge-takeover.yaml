@@ -2,23 +2,17 @@ id: surge-takeover
 
 info:
   name: surge takeover detection
-  author: pdteam
+  author: pdcommunity
   severity: high
-  reference:
-    - https://github.com/EdOverflow/can-i-take-over-xyz
   tags: takeover
+  reference: https://github.com/EdOverflow/can-i-take-over-xyz
 
 requests:
   - method: GET
     path:
       - "{{BaseURL}}"
 
-    matchers-condition: and
     matchers:
-      - type: dsl
-        dsl:
-          - Host != ip
-
       - type: word
         words:
           - project not found

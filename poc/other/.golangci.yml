@@ -1,32 +1,26 @@
-linters-settings:
-  golint:
-    min-confidence: 0
-
-  misspell:
-    locale: US
+run:
+  deadline: 10m
 
 linters:
-  disable-all: true
   enable:
-    - typecheck
-    - goimports
-    - misspell
-    - govet
-    - golint
-    - ineffassign
-    - gosimple
-    - deadcode
-    - unparam
-    - unused
-    - structcheck
-    - prealloc
-    - maligned
-    - unconvert
+  - dupl
+  - goconst
+  - gocyclo
+  - godox
+  - gosec
+  - interfacer
+  - lll
+  - maligned
+  - misspell
+  - prealloc
+  - stylecheck
+  - unconvert
+  - unparam
+  - errcheck
+  - golint
+  - gofmt
+  disable: []
+  fast: false
 
 issues:
   exclude-use-default: false
-  exclude:
-      - should have a package comment
-      - error strings should not be capitalized or end with punctuation or a newline
-service:
-  golangci-lint-version: 1.35.0 # use the fixed version to not introduce new linters unexpectedly
