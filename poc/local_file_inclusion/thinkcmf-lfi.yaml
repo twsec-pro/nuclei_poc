@@ -1,4 +1,4 @@
-id: thinkcmf-lfi
+id: thinkcmf-lfi-3
 
 info:
   name: ThinkCMF LFI
@@ -18,7 +18,7 @@ requests:
 
       - type: regex
         regex:
-          - "root:[x*]:0:0:"
+          - "root:.*:0:0:"
           - "bit app support"
 
       - type: status
