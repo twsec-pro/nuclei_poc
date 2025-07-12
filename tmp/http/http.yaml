@@ -13,9 +13,9 @@ http:
     path:
       - '{{BaseURL}}/'
     matchers:
-      - type: regex
-        regex:
-          - <title>(.*?)</title>
+      - type: word
+        words:
+          - <title>httpbin.org</title>
         case-insensitive: true
       - type: favicon
         hash:
